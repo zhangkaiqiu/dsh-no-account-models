@@ -1,0 +1,23 @@
+{
+  "name": "dsh-no-account-models",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hide the DeepSeek account model group from the model picker by disabling the built-in llm-deepseek-account route.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

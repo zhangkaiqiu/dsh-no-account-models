@@ -1,0 +1,17 @@
+# dsh-no-account-models：插件本体只是一个开关行，真正的效果是下面第二条patch
+# —— 按 id 覆盖内置 dsh-base 里的 `llm-deepseek-account` 行（DeepSeek 账号的
+# 模型路由），把它禁用掉，模型选择器里「DeepSeek 账号」整组随之消失。
+#
+# 注意：账号登录、余额、订阅由另一个 row (`deepseek-account`,
+# @deepseek-ai/dsh-deepseek-account-platform) 提供，这里不动它；DeepSeek 的
+# API Key 路由 (`llm-deepseek`, deepseek-official) 也不受影响。
+#
+# 关闭本插件 = 这一层 patch 不参与组合 = 「DeepSeek 账号」组恢复。
+
+- insert:
+    - id: no-account-models
+      name: dsh-no-account-models
+      config: {}
+
+- id: llm-deepseek-account
+  disabled: true

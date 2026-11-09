@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "隐藏 DeepSeek 账号模型",
+    "description": "开启后禁用内置的 DeepSeek 账号模型路由，模型选择器里不再出现「DeepSeek 账号」整组模型。账号登录、余额，以及 DeepSeek API Key 和其它第三方 provider 都不受影响；关闭本插件即恢复。"
+  }
+}

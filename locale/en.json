@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Hide DeepSeek account models",
+    "description": "Disables the built-in DeepSeek account model route, so the model picker no longer lists the whole DeepSeek Account group. Account sign-in, balance, the DeepSeek API-key route, and third-party providers are unaffected. Turn the plugin off to restore the group."
+  }
+}
