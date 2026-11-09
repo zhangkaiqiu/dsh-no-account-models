@@ -28,8 +28,9 @@ dsh plugin --profile desktop add github:zhangkaiqiu/dsh-no-account-models
 dsh plugin --profile desktop add github:zhangkaiqiu/dsh-no-account-models#v0.1.0
 ```
 
-更新用 `dsh plugin --profile desktop update dsh-no-account-models`。本插件没有 client 半，
-装完重启 DSH 即生效；如果页面已经打开，刷新一次也能看到选择器变化。
+更新用 `dsh plugin --profile desktop update dsh-no-account-models`（跟 main 时有效；装了 tag 的
+升级要重新 `add` 新 tag）。本插件没有 client 半，装完重启 DSH 即生效；如果页面已经打开，刷新
+一次也能看到选择器变化。
 
 本地开发时也可以直接在 DSH 插件页安装本目录。
 
