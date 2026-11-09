@@ -4,6 +4,26 @@
   "private": true,
   "type": "module",
   "description": "Hide the DeepSeek account model group from the model picker by disabling the built-in llm-deepseek-account route.",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "models",
+    "model-picker",
+    "deepseek-account"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangkaiqiu/dsh-no-account-models.git"
+  },
+  "homepage": "https://github.com/zhangkaiqiu/dsh-no-account-models#readme",
+  "bugs": {
+    "url": "https://github.com/zhangkaiqiu/dsh-no-account-models/issues"
+  },
   "exports": {
     ".": "./index.js",
     "./locale/*.json": "./locale/*.json",

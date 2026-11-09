@@ -16,13 +16,22 @@
 
 ## 安装
 
-在 DSH 插件页安装本目录，或通过 `plugin_manager` 的 `install_bundle` 指向本目录：
+从 GitHub 直接装：
 
-```
-plugin_manager install_bundle "D:\project\dsh-plugin\dsh-no-account-models"
+```bash
+dsh plugin --profile desktop add github:zhangkaiqiu/dsh-no-account-models
 ```
 
-安装后立即生效；如果你的页面已经打开，刷新一次即可看到选择器变化。
+`desktop` 是桌面版的 profile 名（命令行版用 `web`，改成你自己的 profile）。也可以锁 tag：
+
+```bash
+dsh plugin --profile desktop add github:zhangkaiqiu/dsh-no-account-models#v0.1.0
+```
+
+更新用 `dsh plugin --profile desktop update dsh-no-account-models`。本插件没有 client 半，
+装完重启 DSH 即生效；如果页面已经打开，刷新一次也能看到选择器变化。
+
+本地开发时也可以直接在 DSH 插件页安装本目录。
 
 ## 开关
 
